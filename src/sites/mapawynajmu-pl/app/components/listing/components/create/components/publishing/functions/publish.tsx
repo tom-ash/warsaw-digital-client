@@ -26,12 +26,12 @@ export function publish(addPromotion: boolean = false) {
   const announcementObject = {
     // category: this.categoryManager().validate(),
     // @ts-ignore
-    pictures: this.validatePictures(),
-    map: mapValidator({
-      lat: latitude,
-      lng: longitude,
-      setErrors,
-    }),
+    // pictures: this.validatePictures(),
+    // map: mapValidator({
+    //   lat: latitude,
+    //   lng: longitude,
+    //   setErrors,
+    // }),
   }
 
   // @ts-ignore

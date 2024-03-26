@@ -3,9 +3,9 @@ import { ManagedText } from 'managed-inputs'
 import { useDispatch } from 'react-redux'
 
 interface NumberInputInterface {
-  value: string;
-  placeholder: string;
-  onChange(value: string): void;
+  value: string
+  placeholder: string
+  onChange(value: string): void
 }
 
 export const NumberInput = (props: NumberInputInterface) => {

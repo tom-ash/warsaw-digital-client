@@ -1,4 +1,4 @@
-import { compressAndSaveBlobPicture } from '../../../../../functions/picture-handlers'
+import { compressAndSaveBlobPicture } from '../../../../../../../functions/picture-handlers'
 
 function savePicture() {
   const { renderEdit, announcement, setData, setInputs, setControl } = this.props

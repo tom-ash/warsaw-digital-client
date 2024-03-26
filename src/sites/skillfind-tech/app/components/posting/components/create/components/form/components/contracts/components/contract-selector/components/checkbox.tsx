@@ -1,11 +1,11 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
-import { useInputs } from '../../../../../../../../../../../../../shared/app/functions/store/use-inputs';
+import { useInputs } from '../../../../../../../../../../../../../shared/app/functions/store/use-inputs'
 import { ManagedCheckbox } from 'managed-inputs'
 
 interface ContractCheckboxInterface {
-  name: string;
-  label: string;
+  name: string
+  label: string
 }
 
 export const ContractCheckbox = (props: ContractCheckboxInterface) => {

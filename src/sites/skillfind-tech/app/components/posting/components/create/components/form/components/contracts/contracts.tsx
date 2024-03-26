@@ -6,9 +6,9 @@ import { ContractSelector } from './components/contract-selector/contract-select
 import { useTexts } from '../../../../../../../../../../shared/app/functions/store/use-texts'
 
 interface Contract {
-  name: string;
-  label: string;
-  instructions: string;
+  name: string
+  label: string
+  instructions: string
 }
 
 export const Contracts = () => {
@@ -16,17 +16,13 @@ export const Contracts = () => {
 
   const { contracts } = useInputs()
   const inputs = useInputs()
-  const { minPlaceholder, maxPlaceholder } = useTexts();
+  const { minPlaceholder, maxPlaceholder } = useTexts()
 
   return (
     <div className='contracts'>
       <h2>Contract</h2>
       {contracts.map((contract: Contract) => {
-        const {
-          name,
-          label,
-          instructions,
-        } = contract
+        const { name, label, instructions } = contract
 
         const checked = inputs[name]
 

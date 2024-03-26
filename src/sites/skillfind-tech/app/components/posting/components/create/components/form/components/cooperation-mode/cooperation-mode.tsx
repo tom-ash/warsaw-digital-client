@@ -19,7 +19,7 @@ export const CooperationMode = () => {
       <h2>{cooperationModeHeading}</h2>
       <fieldset>
         <legend>{cooperationModeLegend}</legend>
-        {options.map((option: { value: string, label: string }) => {
+        {options.map((option: { value: string; label: string }) => {
           const { value, label } = option
           const id = `${name}_${value}`
 
@@ -33,9 +33,7 @@ export const CooperationMode = () => {
                 onChange={() => setInputs({ cooperationMode: value })}
                 checked={cooperationMode === value}
               />
-              <label htmlFor={id}>
-                {label}
-              </label>
+              <label htmlFor={id}>{label}</label>
             </div>
           )
         })}

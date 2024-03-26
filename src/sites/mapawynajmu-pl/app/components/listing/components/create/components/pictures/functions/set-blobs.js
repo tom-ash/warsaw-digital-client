@@ -1,4 +1,4 @@
-import API_URL from '../../../../../../shared/constants/urls/api'
+import API_URL from '../../../../../../../../shared/constants/urls/api'
 
 export function setBlobs(id, pictures) {
   if (typeof window === 'undefined') return

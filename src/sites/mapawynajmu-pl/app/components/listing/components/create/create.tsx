@@ -1,7 +1,6 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { mapStateToProps, mapDispatchToProps } from './constants/mappers'
-import Pictures from './components/pictures/pictures'
 import { Additional } from './components/additional/additional'
 import Features from './components/features/features'
 import Furnishings from './components/furnishings/furnishings'
@@ -9,7 +8,7 @@ import Success from './components/success/success'
 import { Spinner } from '../../../support/components/spinner/spinner'
 import * as lifecycle from './functions/lifecycle'
 import { publish } from './components/publishing/functions/publish'
-import { validatePictures } from './components/pictures/functions/validate-pictures'
+// import { validatePictures } from './components/pictures/functions/validate-pictures'
 import withStyles from 'isomorphic-style-loader-react18/withStyles'
 import styles from './styles/styles.scss'
 import { H1, ADDITIONAL_DATA_HEADER } from './constants/texts'
@@ -20,8 +19,8 @@ import { Line } from '../../../support/components/line/line'
 import { Category } from './components/category/category.tiles'
 import { SubmitWithoutPromotionButton } from './components/submit/submit-without-promotion.button'
 import { SubmitWithPromotion } from './components/submit/submit-with-promotion/submit-with-promotion'
-import { MapMarker } from '../../../../../../shared/app/components/support/map-marker/map-marker'
 import { Location } from './components/location/location'
+import { Pictures } from './components/pictures/pictures'
 
 class AnnouncementCreate extends React.Component {
   // @ts-ignore
@@ -32,7 +31,7 @@ class AnnouncementCreate extends React.Component {
     this.componentDidMount = lifecycle.componentDidMount
     this.componentDidUpdate = lifecycle.componentDidUpdate
     // @ts-ignore
-    this.validatePictures = validatePictures.bind(this)
+    // this.validatePictures = validatePictures.bind(this)
     // @ts-ignore
     this.publish = publish.bind(this)
   }

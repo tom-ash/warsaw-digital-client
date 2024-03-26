@@ -19,10 +19,6 @@ export const drawPins: DrawPins = attrs => {
   // @ts-ignore
   let pins = []
 
-  console.log('attrs', attrs)
-
-  console.log('pinBuilder', pinBuilder)
-
   // @ts-ignore
   items.map(item => {
     pins.push(drawPin(pinBuilder({ ...item, svgs, currentListingId })))

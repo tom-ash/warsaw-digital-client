@@ -5,9 +5,9 @@ import { changeUrl } from '../../../../../../../../../shared/app/functions/route
 type SubmitProps = {
   lang: Lang
   businessName: string
-  industry: string;
+  industry: string
   selectedSkills: Array<any>
-  cooperationMode: string;
+  cooperationMode: string
   b2b: boolean
   b2bMin: number
   b2bMax: number
@@ -44,8 +44,6 @@ export const submit = (props: SubmitProps) => {
     locality,
     sublocality,
   } = props
-
-  console.log('props', props)
 
   const body = {
     businessName,
